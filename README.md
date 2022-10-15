@@ -29,19 +29,19 @@ An example implementation of using a native iOS Notification Service Extension (
     </extension>
 </extensions>
 ```
-6. Run the app on your physcial device to make sure it compiles correctly. Validate in the generated Xcode project (in build/iphone/<your-app-name>.xcodeproj) that the app extension was linked correctly.
+6. Run the app on your physcial device to make sure it compiles correctly. Validate in the generated Xcode project (in `build/iphone/<your-app-name>.xcodeproj`) that the app extension was linked correctly.
 7. Prepare a sample push notification with the following structure:
 ```json
 {
-	"aps": {
-		"alert": {
-			"title": "My Notification Title",
-			"body": "My Notification Message",
-		},
-		"sound": "default",
-		"category": "MyAttachmentCategory",
+    "aps": {
+    	"alert": {
+	    "title": "My Notification Title",
+	    "body": "My Notification Message",
+        },
+	"sound": "default",
+	"category": "MyAttachmentCategory",
         "mutable-content": 1
-	},
+    },
     "attachment": "MY_IMAGE_URL"
 }
 ```

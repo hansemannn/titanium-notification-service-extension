@@ -22,6 +22,9 @@
     <string>1.0.0.0</string>
 	<key>NSExtension</key>
 	<dict>
+        <!-- Change to the category that should be handled. You can also leave it out if it should handle all notifications by default -->
+        <key>UNNotificationExtensionCategory</key>
+		<string>MyAttachmentCategory</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.usernotifications.service</string>
 		<key>NSExtensionPrincipalClass</key>
